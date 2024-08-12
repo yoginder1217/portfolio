@@ -1,0 +1,133 @@
+.edit-blog-container {
+    padding: 16px 20px;
+    width: 80%;
+    margin-left: 16rem;
+    margin-top: 1rem;
+    
+}
+
+.edit-blog-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #4A4A4A;
+    pointer-events: none;
+}
+
+.search-add-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-bottom: 8px;
+}
+
+.add-blog-button {
+    display: flex;
+    align-items: center;
+    background-color: #FF0000;
+    color: white;
+    font-size: 14px;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    margin-bottom: 12px;
+    cursor: pointer;
+}
+
+.add-blog-button i {
+    margin-right: 8px;
+}
+
+.blog-count {
+    color: #6B7280;
+    font-weight: 600;
+    font-size: 14px;
+    padding-bottom: 8px;
+}
+
+.blog-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    padding: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.blog-item {
+    padding: 16px;
+    margin: 12px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.blog-image {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    object-fit: cover;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.blog-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333333;
+    padding-top: 8px;
+    word-break: break-word;
+}
+
+.blog-tag {
+    display: inline-block;
+    padding: 8px;
+    margin: 4px;
+    background-color: #FFF0F0;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.blog-tag p {
+    color: #FF0000;
+    font-size: 12px;
+}
+
+.blog-tag:hover {
+    background-color: #FFE5E5;
+}
+
+.blog-actions {
+    margin-top: 8px;
+}
+
+.link-blog-button {
+    background-color: #4B5563;
+    color: white;
+    padding: 4px 8px;
+    margin-right: 8px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.edit-blog-button {
+    background-color: #10B981;
+    color: white;
+    padding: 4px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.no-blog-message {
+    font-size: 14px;
+    color: #DC2626;
+    font-weight: 500;
+    padding: 16px;
+    text-align: center;
+}
+
+.loader-container {
+    display: grid;
+    height: 100vh;
+    place-items: center;
+}

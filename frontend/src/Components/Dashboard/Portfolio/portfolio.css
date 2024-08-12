@@ -1,0 +1,133 @@
+.edit-portfolio-container {
+    padding: 16px 20px;
+    width: 80%;
+    margin-left: 16rem;
+    margin-top: 1rem;
+    
+}
+
+.edit-portfolio-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #4A4A4A;
+    pointer-events: none;
+}
+
+.search-add-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-bottom: 8px;
+}
+
+.add-portfolio-button {
+    display: flex;
+    align-items: center;
+    background-color: #FF0000;
+    color: white;
+    font-size: 14px;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    margin-bottom: 12px;
+    cursor: pointer;
+}
+
+.add-portfolio-button i {
+    margin-right: 8px;
+}
+
+.portfolio-count {
+    color: #6B7280;
+    font-weight: 600;
+    font-size: 14px;
+    padding-bottom: 8px;
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    padding: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.portfolio-item {
+    padding: 16px;
+    margin: 12px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.portfolio-image {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    object-fit: cover;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333333;
+    padding-top: 8px;
+    word-break: break-word;
+}
+
+.portfolio-tag {
+    display: inline-block;
+    padding: 8px;
+    margin: 4px;
+    background-color: #FFF0F0;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.portfolio-tag p {
+    color: #FF0000;
+    font-size: 12px;
+}
+
+.portfolio-tag:hover {
+    background-color: #FFE5E5;
+}
+
+.portfolio-actions {
+    margin-top: 8px;
+}
+
+.link-portfolio-button {
+    background-color: #4B5563;
+    color: white;
+    padding: 4px 8px;
+    margin-right: 8px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.edit-portfolio-button {
+    background-color: #10B981;
+    color: white;
+    padding: 4px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.no-portfolio-message {
+    font-size: 14px;
+    color: #DC2626;
+    font-weight: 500;
+    padding: 16px;
+    text-align: center;
+}
+
+.loader-container {
+    display: grid;
+    height: 100vh;
+    place-items: center;
+}

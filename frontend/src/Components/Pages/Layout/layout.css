@@ -1,0 +1,16 @@
+/* Layout.css */
+
+.layout-container {
+    display: flex;
+}
+
+.layout-content {
+    padding-left: 5rem; /* Equivalent to pl-[5rem] */
+    font-size: 1.5rem; /* Equivalent to text-2xl */
+    font-weight: 600; /* Equivalent to font-semibold */
+    flex: 1; /* Equivalent to flex-1 */
+    height: 100vh; /* Equivalent to h-screen */
+    width: 100%; /* Equivalent to w-full */
+    position: absolute; /* Equivalent to absolute */
+    z-index: 10; /* Equivalent to z-10 */
+}

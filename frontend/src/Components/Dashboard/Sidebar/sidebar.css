@@ -1,0 +1,162 @@
+/* Sidebar.css */
+
+.sidebar {
+    background-color: #512da8;
+    background: linear-gradient(to right, #5c6bc0, #512da8);
+    color: white;
+    height: 100vh;
+    transition: width 0.3s;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: auto; /* Allow scrolling */
+    overflow-x: hidden; /* Prevent horizontal scroll */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+/* Hide scrollbar for Webkit browsers (Chrome, Safari) */
+.sidebar::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for Firefox */
+.sidebar {
+    scrollbar-width: none; /* "auto" or "thin" */
+}
+
+/* Hide scrollbar for Edge */
+.sidebar {
+    -ms-overflow-style: none; /* IE and Edge */
+}
+
+.sidebar-expanded {
+    width: 250px;
+}
+
+.sidebar-collapsed {
+    width: 80px;
+}
+
+.toggle-button {
+    position: absolute;
+    top: 10px;
+    right: -20px; /* Position it outside the sidebar */
+    width: 40px;
+    height: 40px;
+    border: 2px solid #ffffff; /* Circular border */
+    border-radius: 50%; /* Make it circular */
+    background-color: transparent; /* Background color of the button */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    z-index: 1000; /* Ensure it is above other elements */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.toggle-button:hover {
+    background-color: #fff;
+    color: #512da8;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px; /* Space below the logo */
+}
+
+/* Ensure logo image scales properly */
+.logo-img {
+    width: 50px; /* Adjust size as needed */
+    transition: transform 0.3s;
+}
+
+.rotate-logo {
+    transform: rotate(360deg);
+}
+
+/* Hide text when collapsed */
+.logo-text {
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+    color: #fff;
+}
+
+.sidebar-collapsed .logo-text {
+    display: none;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+.menu-list {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    flex-grow: 1;
+}
+
+.menu-item {
+    width: 100%;
+}
+
+.menu-link {
+    display: flex;
+    align-items: center; /* Center items vertically */
+    padding: 15px 20px;
+    text-decoration: none;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+.menu-link:hover {
+    background-color: #fff;
+    color: #512da8;
+    border-radius: 2px;
+}
+
+.menu-icon {
+    font-size: 20px;
+}
+
+.menu-title {
+    margin-left: 15px;
+    transition: opacity 0.3s;
+    white-space: nowrap; /* Prevents text from wrapping */
+    overflow: hidden; /* Ensures text is truncated if too long */
+    text-overflow: ellipsis; /* Adds "..." if text is too long */
+}
+
+.logout-button {
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    width: 100%;
+    border: none;
+    background: none;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.logout-button:hover {
+    background-color: #fff;
+    color: #512da8;
+}
+
+.logout-button .menu-icon {
+    font-size: 20px;
+}
+
+.logout-button .menu-title {
+    margin-left: 15px;
+    transition: opacity 0.3s;
+}

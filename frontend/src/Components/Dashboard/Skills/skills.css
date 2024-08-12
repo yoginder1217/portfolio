@@ -1,0 +1,111 @@
+/* Custom CSS for EditSkills Component */
+
+.loading-container {
+    display: grid;
+    height: 100vh;
+    place-items: center;
+}
+
+.edit-skills-container {
+    padding: 16px 20px;
+    width: 80%;
+    margin-left: 16rem;
+    margin-top: 1rem;
+    
+}
+
+.edit-skills-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #6B7280;
+    pointer-events: none;
+    margin-bottom: 16px;
+}
+
+.skills-table-container {
+    padding: 16px;
+    width: 100%;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.skills-header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 16px;
+}
+
+.add-skill-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 12px;
+    font-size: 0.75rem;
+    text-transform: capitalize;
+}
+
+.skills-card {
+    width: 100%;
+    height: 420px;
+    overflow-y: hidden;
+}
+
+.skills-table {
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+}
+
+.skills-table-head {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: #FEE2E2;
+}
+
+.skills-table-header-cell {
+    border-bottom: 1px solid #D1D5DB;
+    padding: 16px;
+}
+
+.skills-table-header-text {
+    color: #B91C1C;
+    font-weight: 600;
+    opacity: 0.9;
+}
+
+.no-skills-message {
+    padding: 12px;
+    font-size: 0.875rem;
+    color: #B91C1C;
+    font-weight: 500;
+}
+
+.skills-table-row:nth-child(even) {
+    background-color: #FECACA;
+}
+
+.skills-table-cell {
+    padding: 16px;
+}
+
+.skills-table-text {
+    color: #B91C1C;
+    font-weight: 400;
+}
+
+.skills-table-level-text {
+    color: #EF4444;
+    font-weight: 400;
+}
+
+.skills-table-actions {
+    padding: 16px;
+    display: flex;
+    gap: 8px;
+}
+
+.edit-skill-link {
+    margin-right: 8px;
+}
